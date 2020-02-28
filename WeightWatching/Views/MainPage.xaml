@@ -1,0 +1,36 @@
+﻿<Page x:Class="WeightWatching.Views.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeightWatching.Views"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="MainPage" Loaded="MainPage_OnLoaded">
+
+    <Grid>
+        <!-- dragablz:TabablzControl -->
+        <!-- TabControl -->
+        <dragablz:TabablzControl>
+            <TabItem Header="Weight Tracker" Name="WeightTracker">
+            </TabItem>
+            <TabItem Header="Daily Food Intake" Name="FoodIntake">
+            </TabItem>
+            <TabItem Header="Exercise Planner" Name="ExercisePlanner">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock HorizontalAlignment="Center" Style="{StaticResource MaterialDesignDisplay4TextBlock}" Margin="0" VerticalAlignment="Center" Width="670" Text="Coming Soon!"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Meal Planner" Name="MealPlanner">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock HorizontalAlignment="Center" Style="{StaticResource MaterialDesignDisplay4TextBlock}" Margin="0" VerticalAlignment="Center" Width="670" Text="Coming Soon!"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="About" Name="About">
+            </TabItem>
+        </dragablz:TabablzControl>
+
+    </Grid>
+</Page>
